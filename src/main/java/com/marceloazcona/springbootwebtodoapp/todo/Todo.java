@@ -2,9 +2,6 @@ package com.marceloazcona.springbootwebtodoapp.todo;
 
 import java.time.LocalDate;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Todo {
 	private int id;
 	private String username;
