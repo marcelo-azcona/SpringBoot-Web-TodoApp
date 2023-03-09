@@ -11,13 +11,20 @@ public class TodoService {
 
 	private static List<Todo> todos = new ArrayList<>();
 
-	static {
-		todos.add(new Todo(1, "Marcelo", "Learn AWS", LocalDate.now(), false));
+	private static int todosCount = 0;
 
-		todos.add(new Todo(1, "Azcona", "Learn Java", LocalDate.now(), true));
+	static {
+		todos.add(new Todo(++todosCount, "Marcelo", "Learn AWS", LocalDate.now(), false));
+		todos.add(new Todo(++todosCount, "Azcona", "Learn Java", LocalDate.now(), true));
 	}
 
 	public List<Todo> findByUsername(String username) {
 		return todos;
+	}
+
+	public void addTodo(String username, String description, LocalDate targetDate, boolean isDone) {
+		Todo todo = new Todo(++todosCount, username, description, targetDate, isDone);
+
+		todos.add(todo);
 	}
 }
