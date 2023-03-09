@@ -10,5 +10,6 @@
 <body>
 	<div>Welcome to main page!</div>
 	<div>Your name is: ${name}</div>
+	<div><a href="list-todos">Manage</a> your Todos</div>
 </body>
 </html>
