@@ -2,14 +2,13 @@
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Welcome page</title>
-</head>
-
-<body>
-	<div>Welcome to main page!</div>
-	<div>Your name is: ${name}</div>
-	<div><a href="list-todos">Manage</a> your Todos</div>
-</body>
+	<head>
+		<title>Welcome Page</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Welcome ${name}</h1>
+			<a href="list-todos">Manage</a> your todos
+		</div>
+	</body>
 </html>
